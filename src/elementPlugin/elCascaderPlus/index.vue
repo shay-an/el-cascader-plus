@@ -93,6 +93,7 @@ export default {
     },
     value: {
       async handler(val, oldVal) {
+        debugger
         // 将回显与弹窗功能分离，互不影响
         if (!this.isPopOpen && this.innerProps.lazy == true) {
           // val长度大于0避免空值触发不回显的bug
